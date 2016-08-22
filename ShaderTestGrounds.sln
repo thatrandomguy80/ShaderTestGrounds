@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderTestGrounds.CSharp.Plugins", "ShaderTestGrounds.CSharp.Plugins.csproj", "{0AA25C49-E615-853E-827C-D45CC2A81D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderTestGrounds.CSharp", "ShaderTestGrounds.CSharp.csproj", "{68DC81DF-1AFE-C119-E6AA-C3A17DC63981}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShaderTestGrounds.CSharp.Editor", "ShaderTestGrounds.CSharp.Editor.csproj", "{6F54012E-77C8-E0C9-996D-25CC33D85E5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AA25C49-E615-853E-827C-D45CC2A81D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA25C49-E615-853E-827C-D45CC2A81D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA25C49-E615-853E-827C-D45CC2A81D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA25C49-E615-853E-827C-D45CC2A81D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68DC81DF-1AFE-C119-E6AA-C3A17DC63981}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68DC81DF-1AFE-C119-E6AA-C3A17DC63981}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68DC81DF-1AFE-C119-E6AA-C3A17DC63981}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68DC81DF-1AFE-C119-E6AA-C3A17DC63981}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F54012E-77C8-E0C9-996D-25CC33D85E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F54012E-77C8-E0C9-996D-25CC33D85E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F54012E-77C8-E0C9-996D-25CC33D85E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F54012E-77C8-E0C9-996D-25CC33D85E5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

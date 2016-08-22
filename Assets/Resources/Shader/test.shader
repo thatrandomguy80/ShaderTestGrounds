@@ -38,6 +38,7 @@
 				{
 					float2 uv : TEXCOORD0;
 					float4 vertex : SV_POSITION;
+					//float2 screenuv : TEXCOORD1;
 					float3 norm : NORMAL;
 				};
 
@@ -49,14 +50,18 @@
 				float _Poffx,_Cup,_Cdown, _sampleoffx, _sampleoffy;
 				sampler2D _posTex;
 
+				uniform sampler2D _GlobalRefractionTex;//cam output
+
 				v2f vert(appdata v)
 				{
 					v2f o;
 					#if !defined(SHADER_API_OPENGL)//allows text to be loaded in vert func
 					
 					o.uv = TRANSFORM_TEX(v.uv, _MainTex);
-					float4 posEdit = tex2Dlod(_posTex, float4(v.uv.x + _sampleoffx -1, v.uv.y + _sampleoffy - 1 ,0,0));
+					float4 posEdit = tex2Dlod(_GlobalRefractionTex, float4(v.uv.x + _sampleoffx -1, v.uv.y + _sampleoffy - 1 ,0,0));
 					v.vertex.xyz += v.norm.xyz * clamp(mul(posEdit , /*sin(_Time.w)**/_Poffx),_Cdown,_Cup);
+					//o.screenuv = ((o.vertex.xy / o.vertex.w) + 1)*0.5;??
+
 					o.norm = v.norm;
 					o.vertex = mul(UNITY_MATRIX_MVP , v.vertex);
 					#endif
